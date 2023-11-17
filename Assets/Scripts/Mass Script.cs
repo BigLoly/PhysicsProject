@@ -13,8 +13,11 @@ public class MassScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scaleSliderNumber = scaleSlider.value / 45.0f;
+        // change scale according to slider
+        scaleSliderNumber = scaleSlider.value * 100f;
         Vector2 scale = new Vector2(scaleSliderNumber, scaleSliderNumber);
         this.transform.localScale = scale;
+        
+        //change mass according to slider
     }
 }

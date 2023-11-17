@@ -23,7 +23,8 @@ public class GravityScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { 
+        // set gravity to slider value
     Physics2D.gravity = new Vector2(0, _slider.value * -1);
     }
 }
