@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class MassTitleScript : MonoBehaviour
 {
+    
     [SerializeField] private Slider _slider;
     [SerializeField] private TextMeshProUGUI _sliderText;
 
@@ -16,12 +17,13 @@ public class MassTitleScript : MonoBehaviour
         {
             _sliderText.text = v.ToString("0.0");
         });
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
+
 }

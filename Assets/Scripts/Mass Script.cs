@@ -14,7 +14,7 @@ public class MassScript : MonoBehaviour
     void Update()
     {
         // change scale according to slider
-        scaleSliderNumber = scaleSlider.value * 100f;
+        scaleSliderNumber = scaleSlider.value / 45;
         Vector2 scale = new Vector2(scaleSliderNumber, scaleSliderNumber);
         this.transform.localScale = scale;
         
